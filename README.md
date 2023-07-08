@@ -1,7 +1,7 @@
 # Clash-Settings
 
 linux clash的安装配置
-1.下载clash包并解压（如果是从github下载的会有一个clash文件夹在.config包中，里面含有配置文件。如果是朋友转发的包，需要自己准备配置文件）    
+1.下载clash包并解压（如果是从[github](https://github.com/Dreamacro/clash/releases)下载的会有一个clash文件夹在.config包中，里面含有配置文件。如果是朋友转发的包，需要自己准备配置文件）    
 2.解压好之后（建议解压在用户文件夹中/home/user/）将文件夹和启动文件改名为clash（方便使用）  
 将启动文件clash添加可执行权限 chmod +x clash  
 在clash文件夹中通过./clash即可启动clash  
@@ -34,4 +34,6 @@ sudo systemctl start clash // 启动clash.service
 sudo systemctl stop clash // 停止clash.service  
 alias stc="sudo systemctl start clash"  
 alias stp="sudo systemctl stop clash" //设置别名，将这两个别名设置也添加到.bashrc文件中，开机启动输入stc命令即可打开clash，输入stp即可关闭  
-  
+
+
+  https://clash.razord.top/#/proxies //网站用来选择节点
