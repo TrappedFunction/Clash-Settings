@@ -6,14 +6,10 @@ linux clash的安装配置
 将启动文件clash添加可执行权限 chmod +x clash  
 在clash文件夹中通过./clash即可启动clash  
 3.需要将自己的代理文件config.yaml存放在.config中的clash文件夹中  
-4.如果是图形化界面，则直接在设置->网络->代理，进行手动配置代理，ip为127.0.0.1,端口号7890  
-  如果是终端配置则输入以下两条命令  
-  export http_proxy=http://127.0.0.1:7890  
-  export https_proxy=http://127.0.0.1:7890  
-  这个是临时的，如果想要开机自动配置，则将上面两条命令加入到.bashrc文件中  
+4.在设置->网络->代理，进行手动配置代理，ip为127.0.0.1,端口号7890  
 5.配置service，方便启动clash（安装vim）  
 sudo touch /etc/systemd/system/clash.service //创建service文件  
-sudo touch /etc/systemd/system/clash.service //赋予读写执行权限  
+sudo chmod +777 /etc/systemd/system/clash.service //赋予读写执行权限  
 vim /etc/systemd/system/clash.service //vim打开文件  
 在文件中进行如下配置：(i键进入写模式，esc键退出写模式，输入:wq 保存并退出  
 [Unit]  
